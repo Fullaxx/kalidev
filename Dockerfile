@@ -22,6 +22,7 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       build-essential \
       cmake \
       file \
+      less \
       libcurl4-gnutls-dev \
       libevent-dev \
       libgcrypt-dev \
@@ -34,7 +35,10 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       libxml2-dev \
       libzmq3-dev \
       meson \
+      nano \
       sshfs \
+      vim-tiny \
+      xxd \
       xxhash && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
