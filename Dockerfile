@@ -20,6 +20,7 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
     apt-get install -y --allow-unauthenticated \
       build-essential \
       cmake \
+      file \
       libcurl4-gnutls-dev \
       libevent-dev \
       libgcrypt-dev \
@@ -31,6 +32,8 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       libssl-dev \
       libxml2-dev \
       libzmq3-dev \
+      meson \
+      sshfs \
       xxhash && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
