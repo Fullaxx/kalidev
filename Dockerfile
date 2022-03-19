@@ -20,7 +20,7 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
     apt-get install -y --allow-unauthenticated \
       build-essential \
       cmake \
-      libcurl4-openssl-dev \
+      libcurl4-gnutls-dev \
       libevent-dev \
       libgcrypt-dev \
       libgnutls28-dev \
