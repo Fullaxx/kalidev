@@ -19,9 +19,15 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
     apt-get install -y --allow-unauthenticated \
       bash-completion \
+      beav \
       build-essential \
       cmake \
+      dhex \
       file \
+      hexedit \
+      hexer \
+      ht \
+      le \
       less \
       libcurl4-gnutls-dev \
       libevent-dev \
@@ -36,7 +42,11 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       libzmq3-dev \
       meson \
       nano \
+      ncurses-hexedit \
+      radare2 \
+      shed \
       sshfs \
+      tweak \
       vim-tiny \
       xxd \
       xxhash && \
