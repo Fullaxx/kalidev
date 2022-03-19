@@ -21,7 +21,10 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       build-essential \
       cmake \
       libcurl4-openssl-dev \
+      libevent-dev \
       libgcrypt-dev \
+      libgnutls28-dev \
+      libhiredis-dev \
       libmicrohttpd-dev \
       libpcap-dev \
       libsqlite3-dev \
