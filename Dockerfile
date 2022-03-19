@@ -18,6 +18,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # WHY DO I HAVE TO ALLOW INSECURE REPOSITORIES??
 RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
     apt-get install -y --allow-unauthenticated \
+      bash-completion \
       build-essential \
       cmake \
       file \
