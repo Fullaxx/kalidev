@@ -21,6 +21,7 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       bash-completion \
       beav \
       build-essential \
+      cgdb \
       cmake \
       dhex \
       file \
@@ -40,12 +41,14 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       libssl-dev \
       libxml2-dev \
       libzmq3-dev \
+      lsof \
       meson \
       nano \
       ncurses-hexedit \
       radare2 \
       shed \
       sshfs \
+      tree \
       tweak \
       vim-tiny \
       xxd \
