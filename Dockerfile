@@ -45,14 +45,17 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       meson \
       nano \
       ncurses-hexedit \
+      p7zip-rar \
       radare2 \
       shed \
       sshfs \
       tree \
       tweak \
+      unzip \
       vim-tiny \
       xxd \
-      xxhash && \
+      xxhash \
+      zip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
