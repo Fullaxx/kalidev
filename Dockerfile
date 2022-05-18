@@ -14,13 +14,12 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # ------------------------------------------------------------------------------
 # Create a docker image suitable for development
-# WHY ARE ALL THE APT KEYS NOT READABLE??
-# WHY DO I HAVE TO ALLOW INSECURE REPOSITORIES??
-RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
-    apt-get install -y --allow-unauthenticated \
+RUN apt-get update && \
+    apt-get install -y \
       bash-completion \
       beav \
       build-essential \
+      cgdb \
       cmake \
       dhex \
       file \
@@ -57,8 +56,6 @@ RUN apt-get update -oAcquire::AllowInsecureRepositories=true && \
       zip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
-
-# WTF - WHY CANT I INSTALL gdb (and cgdb)
 
 # ------------------------------------------------------------------------------
 # Define default command
