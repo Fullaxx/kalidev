@@ -16,12 +16,14 @@ ENV DEBIAN_FRONTEND noninteractive
 # Create a docker image suitable for development
 RUN apt-get update && \
     apt-get install -y \
+      apcalc \
       bash-completion \
       beav \
       build-essential \
       cgdb \
       cmake \
       dhex \
+      dos2unix \
       file \
       hexedit \
       hexer \
@@ -43,7 +45,10 @@ RUN apt-get update && \
       meson \
       nano \
       ncurses-hexedit \
+      net-tools \
+      openssh-client \
       p7zip-rar \
+      psmisc \
       radare2 \
       shed \
       sshfs \
