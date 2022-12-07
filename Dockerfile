@@ -22,6 +22,7 @@ RUN apt-get update && \
       build-essential \
       cgdb \
       cmake \
+      colortail \
       dhex \
       dos2unix \
       file \
