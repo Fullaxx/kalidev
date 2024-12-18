@@ -5,20 +5,21 @@
 # ------------------------------------------------------------------------------
 # Pull base image
 FROM kalilinux/kali-rolling
-MAINTAINER Brett Kuskie <fullaxx@gmail.com>
+LABEL author="Brett Kuskie <fullaxx@gmail.com>"
 
 # ------------------------------------------------------------------------------
 # Set environment variables
-ENV LANG C
-ENV DEBIAN_FRONTEND noninteractive
+ENV LANG=C
+ENV DEBIAN_FRONTEND=noninteractive
 
 # ------------------------------------------------------------------------------
 # Create a docker image suitable for development
+# apcalc -> calc
+# DELETE beav
 RUN apt-get update && \
     apt-get install -y \
-      apcalc \
+      calc \
       bash-completion \
-      beav \
       build-essential \
       cgdb \
       cmake \
@@ -28,6 +29,7 @@ RUN apt-get update && \
       file \
       hexedit \
       hexer \
+      jq \
       ht \
       le \
       less \
